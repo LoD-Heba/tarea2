@@ -1,1 +1,3 @@
-export class CreateImagenDto {}
+export class CreateImagenDto {
+    
+}

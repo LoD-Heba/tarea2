@@ -8,6 +8,7 @@ import { PrendaModule } from './modules/prenda/prenda.module';
 import { CategoriaModule } from './modules/categoria/categoria.module';
 import { ImagenModule } from './modules/imagen/imagen.module';
 import { ComentariosModule } from './modules/comentarios/comentarios.module';
+import { CloudinaryModule } from './cloudinary/cloudinary.module';
 
 @Module({
   imports: [ConfigModule.forRoot({
@@ -16,7 +17,7 @@ import { ComentariosModule } from './modules/comentarios/comentarios.module';
   }), TypeOrmModule.forRootAsync({
     useFactory: typeOrmConfig,
     inject: [ConfigService],
-  }), ProfileModule, UserModule, PrendaModule, CategoriaModule, ImagenModule, ComentariosModule,
+  }), ProfileModule, UserModule, PrendaModule, CategoriaModule, ImagenModule, ComentariosModule, CloudinaryModule,
   
   ],
 })
